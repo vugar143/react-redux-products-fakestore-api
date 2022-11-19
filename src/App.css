@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body{
+  background-color: teal;
+}
+.nav{
+  height: 70px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap: 30px;
+}
+.nav a{
+  font-size: 20px;
+  color: black;
+}
+.nav a:hover{
+  color: orangered;
+  transition: all 0.5 ease-in;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a.active{
+  color: blue;
+}
+.king{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  background-color: antiquewhite;
+  gap: 20px;
+}
+.hero img{
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+
+}
+.hero{
+background-color: white;
+  text-align: center;
+}
+.basket-container{
+  display:flex;
+  align-items:center; 
+  gap: 30px;
+}
+.basket-info{
+  width: 300px;
+}
+.basket-container img{
+  width:100% ;
+}
+.operations{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.operations button{
+  padding: 20px;
+}
+.operations p{
+  padding: 10px;
+}
+.inc-btn{
+  background-color: green;
+  color: white;
+}
+.dec-btn{
+  background-color: red;
+  color: white;
+}
+.inc-btn:hover,
+.dec-btn:hover{
+  background-color: yellowgreen;
+  cursor: pointer;
+  transition:all 0.5 ease-out;
+  border: transparent;
+}
